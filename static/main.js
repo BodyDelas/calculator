@@ -33,6 +33,7 @@ function isOperation(str) {
 function tokenize(str) {
   let tokens = [];
   let lastNumber = "";
+  //проход по каждому символу в строке
   for (char of str) {
     if (isDigit(char) || char == ".") {
       lastNumber += char;
