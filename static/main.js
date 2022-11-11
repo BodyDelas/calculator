@@ -163,11 +163,12 @@ function clickHandler(event) {
     btnType == "btn percent bg-grey"
   ) {
     screen.textContent += sym;
+    finish = false;
   } else if (btnType == "btn equal bg-orange") {
     finish = true;
     screen.textContent = evaluate(compile(screen.textContent));
   } else if (btnType == "btn ac bg-grey") {
-    screen.textContent = "0";
+    screen.textContent = "";
   }
 }
 
